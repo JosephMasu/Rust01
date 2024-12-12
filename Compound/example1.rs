@@ -21,7 +21,7 @@ fn main() {
 
 
     //string and string Slice
-    fn main() {
+    
         // `String`: Owned, mutable
         let mut owned_string = String::from("Hello");
         owned_string.push_str(", world!"); // Modify the String
@@ -33,7 +33,7 @@ fn main() {
     
         // Passing to a function
         print_message(&owned_string); // Pass as &str (borrowed)
-    }
+    
     
     fn print_message(message: &str) {
         println!("Message: {}", message); // Works with &str
