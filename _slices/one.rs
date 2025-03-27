@@ -16,5 +16,25 @@ fn main(){
 
 
     println!("{:?}", slice2);
+
+
+    //range shortcuts
+
+    let s = String::from("Saint-Masu");
+    
+    //initial shortcut
+    let slice3: &str = &s[0..6];
+    println!("{:?}", slice3);
+    let slice4: &str = &s[..6];
+    println!("{:?}", slice4);
+
+    //shortcut for final index
+
+    let len = s.len();
+    let slice5: &str = &s[6..len];
+    println!("{:?}", slice5);
+    let slice6: &str = &s[6..];
+    println!("{:?}", slice6);
+    
 }
     
