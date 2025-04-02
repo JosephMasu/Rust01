@@ -31,4 +31,5 @@ fn handle_connection(mut stream: TcpStream) {
     let response = format!("{}\r\nContent-Length: {}\r\n\r\n{}", status_line, contents.len(), contents);
     stream.write(response.as_bytes()).unwrap();
     stream.flush().unwrap();
+    
 }
